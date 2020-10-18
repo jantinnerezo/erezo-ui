@@ -1,0 +1,54 @@
+{
+    "name": "jantinnerezo/erezo-ui",
+    "description": "Blade UI components",
+    "keywords": [
+        "jantinnerezo",
+        "erezo-ui"
+    ],
+    "homepage": "https://github.com/jantinnerezo/erezo-ui",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jantinn Erezo",
+            "email": "erezojantinn@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jantinnerezo\\ErezoUi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jantinnerezo\\ErezoUi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jantinnerezo\\ErezoUi\\ErezoUiServiceProvider"
+            ],
+            "aliases": {
+                "ErezoUi": "Jantinnerezo\\ErezoUi\\ErezoUiFacade"
+            }
+        }
+    }
+}
