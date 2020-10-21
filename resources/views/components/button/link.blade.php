@@ -1,8 +1,4 @@
-<button
-    {{ $attributes->merge([
-        'type' => 'button',
-        'class' => 'text-cool-gray-700 text-sm leading-5 font-medium focus:outline-none focus:text-cool-gray-800 focus:underline transition duration-150 ease-in-out flex items-center' . ($attributes->get('disabled') ? ' opacity-75 cursor-not-allowed' : ''),
-    ]) }}
->
+@props(['href'])
+<a {{ $attributes->merge(['class' => 'inline-flex items-center font-semibold text-sm transition ease-in-out duration-150 hover:opacity-75']) }} href="{{ $href }}">
     {{ $slot }}
-</button>
+</a>
