@@ -14,7 +14,7 @@ class ErezoUiServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'erezo-ui');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
     }
