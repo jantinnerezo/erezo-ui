@@ -1,7 +1,7 @@
 @props(['id', 'maxWidth'])
 
 @php
-$id = $id ?? md5($attributes->wire('model'));
+$id = $id ?? md5($attributes['model']);
 switch ($maxWidth ?? '2xl') {
     case 'sm':
         $maxWidth = 'sm:max-w-sm';
@@ -24,7 +24,7 @@ switch ($maxWidth ?? '2xl') {
 
 <div
     x-data="{
-        show: @entangle($attributes->wire('model')),
+        show: $wire.get({{ $attributes['model'] }}),
         focusables() {
             // All focusable element types...
             let selector = 'a, button, input, textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
