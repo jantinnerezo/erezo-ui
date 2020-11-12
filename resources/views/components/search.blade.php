@@ -1,0 +1,1 @@
+<x-ui::input.text type="search" wire:model="search" leadingAddOn="Search" />
