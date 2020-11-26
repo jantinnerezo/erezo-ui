@@ -13,6 +13,6 @@
     <input
         {{ $attributes }}
         x-ref="input"
-        class="rounded-none rounded-r-md flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+        class="rounded-none rounded-r-md flex-1 form-input block w-full border border-gray-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
     />
 </div>
