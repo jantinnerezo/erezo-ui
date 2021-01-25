@@ -1,7 +1,6 @@
 <div
     x-data="Select.data({
         model: '{!! $attributes['wire:model'] !!}',
-        class: '{!! $attributes['class'] !!}',
         placeholder: '{!! $attributes['placeholder'] !!}'
     })"
     x-init="onInit()"
