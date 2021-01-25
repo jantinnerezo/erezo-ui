@@ -1,1 +1,1 @@
-# Erezo Blade UI Components
+# A set of custom Blade UI Components
